@@ -1,2 +1,2 @@
 # MeraBharat
-Animated Website using HTML5 and CSS3
+Animated homepage of Website using HTML5 and CSS3
