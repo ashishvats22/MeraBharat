@@ -1,0 +1,128 @@
+*{
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+header{
+  width: 100%; height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(../images/jaipur.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    animation: animate 10s infinite ease ;
+
+
+
+}
+@keyframes animate {
+  0%{
+    background-image: url(../images/Taj.jpg);
+  }
+  20%{
+    background-image: url(../images/delhi.jpg);
+  }
+  35%{
+    background-image: url(../images/darjeeling.jpg);
+  }
+  60%{
+    background-image: url(../images/kerala.jpg);
+  }
+  80%{
+    background-image: url(../images/mumbai.jpg);
+  }
+  100%{
+    background-image: url(../images/jaipur.jpg);
+  }
+}
+nav{
+  width: 100%;height: 15vh;
+  background: rgba(0,0,0,0.1);
+  color: white;
+  display: flex; justify-content: space-between; align-items: center;
+  text-transform: uppercase;
+}
+nav .logo{
+  width: 25%; text-align:center;
+}
+nav .menu{
+  width: 40%; display: flex; justify-content: space-around;
+}
+nav .menu a{
+  text-decoration: none;
+  color: white; font-weight: bold;
+}
+nav .menu a:first-child{
+  color:#00b894;
+}
+main{
+  width: 100%;
+  display: flex;
+  height: 85vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+section{
+
+}
+section h3{
+  font-size: 35px;
+  font-weight: 200; letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+section h1{
+  margin: 30px 0px 20px 0px;
+  font-size: 50px;
+  font-weight: bolder;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+section p{
+  font-size: 25px;
+  word spacing: 2px;
+  margin-bottom: 40px;
+  font-weight: 300;
+  text shadow:2px 2px 25px black;
+}
+section a{
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  outline: none;
+  text-transform: uppercase;
+  transition: all .5s ease;
+}
+section .btnone{
+  background-color: white;
+  color: black;
+
+}
+  .btnone:hover{
+    background-color: #00b894;
+    color: white;
+  }
+  .btntwo:hover{
+    background-color: white;
+    color: black;
+
+  }
+section .btntwo{
+  background-color: #00b894;
+  color: white;
+}
+.change_content::after{
+  content: '';
+  animation: changetext 10s infinite linear;
+  color: #00b894
+}
+@keyframes changetext {
+  0% {content: "Agra";}
+  20% {content: "Delhi";}
+  35% {content: "Darjeling";}
+  60% {content: "Kerala";}
+  80% {content: "Mumbai";}
+  100% {content: "Jaipur";}
+}
