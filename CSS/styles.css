@@ -8,30 +8,6 @@ header{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-    animation: animate 15s infinite ease ;
-
-
-
-}
-@keyframes animate {
-  0%{
-    background-image: url(../images/Taj.jpg);
-  }
-  20%{
-    background-image: url(../images/delhi.jpg);
-  }
-  35%{
-    background-image: url(../images/darjeeling.jpg);
-  }
-  60%{
-    background-image: url(../images/kerala.jpg);
-  }
-  80%{
-    background-image: url(../images/mumbai.jpg);
-  }
-  100%{
-    background-image: url(../images/jaipur.jpg);
-  }
 }
 nav{
   width: 100%;height: 15vh;
